@@ -1,0 +1,12 @@
+torch
+torchvision
+numpy
+scipy
+scikit-image
+opencv-python
+pillow
+diffusers==0.24.0
+transformers
+accelerate
+tqdm
+ultralytics
