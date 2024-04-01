@@ -13,7 +13,7 @@ O
 
 ## Instructions
 
-`pip install git+https://github.com/7iFinalBoSS/oot_lower_body.git"`
+`pip install git+https://github.com/7iFinalBoSS/oot_lower_body.git`
 
 Examples for Colab. But can be used anywhere.
 
