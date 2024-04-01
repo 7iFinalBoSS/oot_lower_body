@@ -26,7 +26,7 @@ from .pipelines_ootd.unet_vton_2d_condition import UNetVton2DConditionModel
 
 
 class OOTDiffusion:
-    def __init__(self, hg_root: str, model_type: str = "hd", cache_dir: str = None):
+    def __init__(self, hg_root: str, model_type: str = "dc", cache_dir: str = None):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.hg_root = hg_root
         self.cache_dir = cache_dir

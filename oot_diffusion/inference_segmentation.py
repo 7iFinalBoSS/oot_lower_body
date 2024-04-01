@@ -94,7 +94,7 @@ class ClothesMaskModel:
         end_open_pose = time.perf_counter()
         print(f"Open pose in {end_open_pose - start_open_pose:.2f} seconds.")
         mask, mask_gray = get_mask_location(
-            "hd",
+            "dc",
             _category_get_mask_input[category],
             model_parse,
             keypoints,
