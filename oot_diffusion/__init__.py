@@ -12,7 +12,7 @@ DEFAULT_HG_ROOT = Path(os.getcwd()) / "oodt_models"
 
 
 class OOTDiffusionModel:
-    def __init__(self, hg_root: str = None, cache_dir: str = None):
+    def __init__(self, hg_root: str = None, cache_dir: str = None, model_type: str = None):
         """
         Args:
             hg_root (str, optional): Path to the hg root directory. Defaults to CWD.
@@ -22,6 +22,7 @@ class OOTDiffusionModel:
             hg_root = DEFAULT_HG_ROOT
         self.hg_root = hg_root
         self.cache_dir = cache_dir
+        self.model_type = model_type
 
     def load_pipe(self):
         self.pipe = OOTDiffusion(

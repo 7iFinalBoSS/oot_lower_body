@@ -69,11 +69,13 @@ class ClothesMaskModel:
         human_parsing_model: BodyParsingModel,
         pose_model: PoseModel,
         hg_root: str = None,
+        
     ):
+        category = "dress"
         if hg_root is None:
             hg_root = DEFAULT_HG_ROOT
 
-        category = "lowerbody"
+        
 
         if isinstance(model_path, Image.Image):
             model_image = model_path
@@ -94,7 +96,7 @@ class ClothesMaskModel:
         end_open_pose = time.perf_counter()
         print(f"Open pose in {end_open_pose - start_open_pose:.2f} seconds.")
         mask, mask_gray = get_mask_location(
-            "dc",
+           'dc',
             _category_get_mask_input[category],
             model_parse,
             keypoints,
